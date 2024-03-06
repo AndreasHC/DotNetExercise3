@@ -62,15 +62,15 @@ namespace DotNetExercise3
             }
         }
 
-        private int height;
-        public int Height
+        private double height;
+        public double Height
         {
             get { return height; }
             set { height = value; }
         }
 
-        private int weight;
-        public int Weight
+        private double weight;
+        public double Weight
         {
             get { return weight; }
             set { weight = value; }
