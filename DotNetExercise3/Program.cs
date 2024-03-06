@@ -1,3 +1,18 @@
 ﻿using DotNetExercise3;
 
-Person person = new Person();
+try
+{
+    Person person = new Person()
+    {
+        Age = 12,
+        FName = "Sune",
+        LName = "Snutt",
+        Height = 179,
+        Weight = 84,
+    };
+
+}
+catch(ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
+}
