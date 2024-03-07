@@ -49,6 +49,20 @@ try
     foreach (UserError error in errors)
         Console.WriteLine(error.UEMessage());
 
+    List<Animal> animals = new List<Animal>();
+    animals.Add(new Horse("Stewball", 300, 11, 165));
+    animals.Add(new Swan("Odette", 12, 19, 200, SwanSongPattern.OnlyAtDeath));
+    animals.Add(new Dog("Gaspode the wonder dog", 10, 8, "Terrier-like mongrel"));
+    animals.Add(new Wolfman("Scott Howard", 70, 17, "Light Blue"));
+
+    foreach (Animal animal in animals)
+    {
+        Console.WriteLine(animal.Name);
+        animal.DoSound();
+        if(animal is IPerson)
+            ((IPerson)animal).Talk();
+    }
+
 
 }
 catch(ArgumentException ex)
