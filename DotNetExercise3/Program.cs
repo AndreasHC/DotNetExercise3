@@ -30,6 +30,20 @@ try
     personHandler.SetWeight(sune, 79);
     Console.WriteLine(personHandler.GetWeight(sune) == 79);
 
+    List<UserError> errors = new List<UserError>() 
+    {
+        new TextInputError(),
+        new TextInputError(),
+        new NumericInputError(),
+        new TextInputError(),
+        new NumericInputError(),
+        new TextInputError(),
+        new NumericInputError(),
+        new NumericInputError()
+        };
+    foreach (UserError error in errors)
+        Console.WriteLine(error.UEMessage());
+
 
 }
 catch(ArgumentException ex)
