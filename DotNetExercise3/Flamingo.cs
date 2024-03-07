@@ -17,7 +17,7 @@
 
         public override string Stats()
         {
-            return base.Stats() + $"Färgmättnad: {ColorSaturation}";
+            return base.Stats() + $"Färgmättnad: {ColorSaturation}\n";
         }
     }
 }

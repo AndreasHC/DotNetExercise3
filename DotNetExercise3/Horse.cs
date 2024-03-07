@@ -22,7 +22,7 @@
 
         public override string Stats()
         {
-            return base.Stats() + $"Mankhöjd: {WithersHeight}";
+            return base.Stats() + $"Mankhöjd: {WithersHeight}\n";
         }
     }
 }
