@@ -34,9 +34,12 @@ try
     {
         new TextInputError(),
         new TextInputError(),
+        new MouseInputError(),
         new NumericInputError(),
         new TextInputError(),
         new NumericInputError(),
+        new EmptyFieldError(),
+        new CheckboxInputError(),
         new TextInputError(),
         new NumericInputError(),
         new NumericInputError()
