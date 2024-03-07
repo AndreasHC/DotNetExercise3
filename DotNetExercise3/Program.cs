@@ -1,4 +1,6 @@
-﻿using DotNetExercise3;
+﻿// Svar på fråga 3.3.13: Ett attribut som alla fåglar behöver förläggs lämpligen till "Bird".
+// Svar på fråga 3.3.14: Ett attribut som alla djur behöver förläggs lämpligen till "Animal".
+using DotNetExercise3;
 
 try
 {
