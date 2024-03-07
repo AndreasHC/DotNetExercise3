@@ -19,5 +19,10 @@
         {
             Console.WriteLine("bark");
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + $"Ras: {Breed}\n";
+        }
     }
 }

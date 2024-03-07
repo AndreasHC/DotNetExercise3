@@ -19,5 +19,10 @@
         {
             Console.WriteLine("Tweet");
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + $"Vingspann: {WingSpan}\n";
+        }
     }
 }

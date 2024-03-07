@@ -14,5 +14,10 @@
         {
             GularPouchCapacity = gularPouchCapacity;
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + $"Hakpåskapacitet: {GularPouchCapacity}\n";
+        }
     }
 }

@@ -19,5 +19,10 @@
         {
             Console.WriteLine("squeak");
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + $"Antal taggar: {NumberOfSpines}\n";
+        }
     }
 }

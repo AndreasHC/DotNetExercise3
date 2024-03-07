@@ -14,5 +14,10 @@
         {
             ColorSaturation = colorSaturation;
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + $"Färgmättnad: {ColorSaturation}";
+        }
     }
 }

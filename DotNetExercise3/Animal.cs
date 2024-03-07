@@ -34,6 +34,11 @@
 
         public abstract void DoSound();
 
+        public virtual string Stats()
+        {
+            return $"Namn: {Name}\nVikt: {Weight}\nÅlder: {Age}\n";
+        }
+
 
     }
 }

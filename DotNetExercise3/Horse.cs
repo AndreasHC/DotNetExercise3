@@ -19,5 +19,10 @@
         {
             Console.WriteLine("neigh");
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + $"Mankhöjd: {WithersHeight}";
+        }
     }
 }

@@ -19,5 +19,11 @@
         {
             Console.WriteLine("\"There's a new sound\" by Tony Burrello");
         }
+
+        public override string Stats()
+        {
+            string poisonString = IsPoisonous ? "Ja" : "Nej";
+            return base.Stats() + $"Giftig: {poisonString}\n";
+        }
     }
 }

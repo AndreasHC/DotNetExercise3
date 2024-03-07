@@ -25,5 +25,10 @@ namespace DotNetExercise3
         {
             Console.WriteLine("Howl");
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + $"Ögonfärg: {EyeColor}\n";
+        }
     }
 }
