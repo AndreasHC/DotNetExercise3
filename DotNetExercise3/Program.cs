@@ -1,8 +1,7 @@
 ﻿// Svar på fråga 3.3.13: Ett attribut som alla fåglar behöver förläggs lämpligen till "Bird".
 // Svar på fråga 3.3.14: Ett attribut som alla djur behöver förläggs lämpligen till "Animal".
 // Svar på fråga 3.4.9: En lista som är definierad som en lista med hundar kan bara innehålla objekt som uppfyller "is Dog".
-// Svar på 3.4.10: En lista som ska kunna lagra alla upptänkliga klasser tillsammans måste definieras som en List<Object>.
-
+// Svar på fråga 3.4.10: En lista som ska kunna lagra alla upptänkliga klasser tillsammans måste definieras som en List<Object>.
 using DotNetExercise3;
 
 try
@@ -68,6 +67,9 @@ try
 
     List<Dog> dogs = new List<Dog>();
     //dogs.Add(new Horse("Shadowfax", 350, 8, 170));
+
+    foreach(Animal animal in animals)
+        Console.WriteLine(animal.Stats());
 
 }
 catch(ArgumentException ex)
