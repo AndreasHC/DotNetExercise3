@@ -24,5 +24,10 @@
         {
             return base.Stats() + $"Ras: {Breed}\n";
         }
+
+        public string ArbitrarilyNamedMethod()
+        {
+            return "Godtycklig sträng";
+        }
     }
 }

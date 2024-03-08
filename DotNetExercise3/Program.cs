@@ -3,6 +3,7 @@
 // Svar på fråga 3.4.9: En lista som är definierad som en lista med hundar kan bara innehålla objekt som uppfyller "is Dog".
 // Svar på fråga 3.4.10: En lista som ska kunna lagra alla upptänkliga klasser tillsammans måste definieras som en List<Object>.
 // Svar på fråga 3.4.13: Det itereras över listan, och för varje element i listan exekveras den "Stats"-metod som är förknippad med objektets typ (inte referensens typ), och resultatet skrivs ut.
+// Svar på fråga 3.4.17: De referenser som fås från en List<Animal> är Animal-referenser, oavsett vad för slags tingestar de refererar till, och bara de medlemmar (heter det så på svenska?) vars existens garanteras av Animal-referensens existens kan interageras med genom en Animal-referens.
 using DotNetExercise3;
 
 try
@@ -72,11 +73,20 @@ try
     foreach(Animal animal in animals)
         Console.WriteLine(animal.Stats());
 
-    foreach(Animal animal in animals)
-        if(animal is Dog)
+    foreach (Animal animal in animals)
+        if (animal is Dog)
             Console.WriteLine(animal.Stats());
+
+    //foreach (Animal animal in animals)
+    //    if (animal is Dog)
+    //        Console.WriteLine(animal.ArbitrarilyNamedMethod());
+
+    foreach (Animal animal in animals)
+        if (animal is Dog)
+            Console.WriteLine(((Dog)animal).ArbitrarilyNamedMethod());
+
 }
-catch(ArgumentException ex)
+catch (ArgumentException ex)
 {
     Console.WriteLine(ex.Message);
 }
