@@ -72,6 +72,9 @@ try
     foreach(Animal animal in animals)
         Console.WriteLine(animal.Stats());
 
+    foreach(Animal animal in animals)
+        if(animal is Dog)
+            Console.WriteLine(animal.Stats());
 }
 catch(ArgumentException ex)
 {
