@@ -2,41 +2,41 @@
 
 namespace DotNetExercise3
 {
-    internal enum SwanSongPattern
+    internal enum SwanSongBehavior
     {
         Never,
         Intermittently,
         OnlyAtDeath
     }
 
-    internal static class SwanSongPatternTranslator
+    internal static class SwanSongBehaviorTranslator
     {
-        private static ImmutableDictionary<SwanSongPattern, string> swedish = (new Dictionary<SwanSongPattern, string> { { SwanSongPattern.Never, "Aldrig" }, { SwanSongPattern.Intermittently, "Sporadiskt" }, { SwanSongPattern.OnlyAtDeath, "Bara vid döden" } }).ToImmutableDictionary();
+        private static ImmutableDictionary<SwanSongBehavior, string> swedish = (new Dictionary<SwanSongBehavior, string> { { SwanSongBehavior.Never, "Aldrig" }, { SwanSongBehavior.Intermittently, "Sporadiskt" }, { SwanSongBehavior.OnlyAtDeath, "Bara vid döden" } }).ToImmutableDictionary();
 
-        public static string Swedish(SwanSongPattern pattern)
+        public static string Swedish(SwanSongBehavior behavior)
         { 
-            return swedish[pattern];
+            return swedish[behavior];
         }
     }
 
     internal class Swan : Bird
     {
-        private SwanSongPattern songPattern;
+        private SwanSongBehavior songBehavior;
 
-        public SwanSongPattern SongPattern
+        public SwanSongBehavior SongBehavior
         {
-            get { return songPattern; }
-            set { songPattern = value; }
+            get { return songBehavior; }
+            set { songBehavior = value; }
         }
 
-        public Swan(string name, double weight, int age, double wingSpan, SwanSongPattern songPattern) : base(name, weight, age, wingSpan)
+        public Swan(string name, double weight, int age, double wingSpan, SwanSongBehavior songBehavior) : base(name, weight, age, wingSpan)
         {
-            SongPattern = songPattern;
+            SongBehavior = songBehavior;
         }
 
         public override string Stats()
         {
-            return base.Stats() + $"Sångmönster: {SwanSongPatternTranslator.Swedish(SongPattern)}\n";
+            return base.Stats() + $"Sångbeteende: {SwanSongBehaviorTranslator.Swedish(SongBehavior)}\n";
         }
     }
 }
