@@ -2,6 +2,7 @@
 // Svar på fråga 3.3.14: Ett attribut som alla djur behöver förläggs lämpligen till "Animal".
 // Svar på fråga 3.4.9: En lista som är definierad som en lista med hundar kan bara innehålla objekt som uppfyller "is Dog".
 // Svar på fråga 3.4.10: En lista som ska kunna lagra alla upptänkliga klasser tillsammans måste definieras som en List<Object>.
+// Svar på fråga 3.4.13: Det itereras över listan, och för varje element i listan exekveras den "Stats"-metod som är förknippad med objektets typ (inte referensens typ), och resultatet skrivs ut.
 using DotNetExercise3;
 
 try
