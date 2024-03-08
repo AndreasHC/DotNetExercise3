@@ -63,8 +63,7 @@ try
     {
         Console.WriteLine(animal.Name);
         animal.DoSound();
-        if(animal is IPerson)
-            ((IPerson)animal).Talk();
+        (animal as IPerson)?.Talk();
     }
 
     List<Dog> dogs = new List<Dog>();
