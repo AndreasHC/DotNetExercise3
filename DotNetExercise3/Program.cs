@@ -58,6 +58,12 @@ try
     animals.Add(new Swan("Odette", 12, 19, 200, SwanSongPattern.OnlyAtDeath));
     animals.Add(new Dog("Gaspode the wonder dog", 10, 8, "Terrier-like mongrel"));
     animals.Add(new Wolfman("Scott Howard", 70, 17, "Light Blue"));
+    animals.Add(new Flamingo("Placido Flamingo", 5, 21, 100, 1));
+    animals.Add(new Bird("Kalle Anka", 56, 30, 170));
+    animals.Add(new Hedgehog("Hans", 2, 16, 7103));
+    animals.Add(new Wolf("Akela", 50, 16, "Yellow"));
+    animals.Add(new Worm("The Lambton Worm", 6034, 7, true));
+    animals.Add(new Pelican("Seymore D. Fair", 7, 13, 230, 11));
 
     foreach (Animal animal in animals)
     {
